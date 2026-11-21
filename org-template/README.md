@@ -15,4 +15,5 @@ For a true one-click start, use the GitHub template repos instead of forking:
 [bulsutools/room-tba-template](https://github.com/bulsutools/room-tba-template)
 and
 [bulsutools/website-template](https://github.com/bulsutools/website-template)
-(both marked `is_template`, clean mirrors of upstream `main`).
+(both marked `is_template`, clean mirrors of upstream `main` — no campus
+config baked in).

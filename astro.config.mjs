@@ -2,19 +2,19 @@ import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
 
 export default defineConfig({
-  // TODO: set this to wherever the site is deployed
   site: "https://fork.bulsu.tools",
   integrations: [
     starlight({
-      title: "UPLB Tools Fork Kit",
+      title: "Campus Tools",
       description:
-        "How to fork UPLB Tools projects — room-tba, website, and friends — into your own campus org.",
+        "Fork guides and org bootstrap for campus tools — room-tba, website, and friends.",
       social: [{ icon: "github", label: "GitHub", href: "https://github.com/bulsutools" }],
       sidebar: [
         {
           label: "Start here",
           items: [{ autogenerate: { directory: "guides" } }],
         },
+        { label: "Instances", slug: "instances" },
         {
           label: "Concepts",
           items: [

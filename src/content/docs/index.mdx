@@ -1,0 +1,63 @@
+---
+title: Campus Tools
+description: Run campus utilities on your own campus — fork guides and org bootstrap for the UPLB Tools ecosystem.
+---
+
+import { CardGrid, LinkCard } from "@astrojs/starlight/components";
+
+Campus Tools is the fork kit for the UPLB Tools ecosystem: guides and
+templates for standing up your own campus org and running the software on
+your campus.
+
+<CardGrid>
+  <LinkCard
+    title="Stand up a campus org"
+    href="/guides/new-campus-org/"
+    body="Create the GitHub org, profile repo, and repo set — or go one-click with the template repos."
+  />
+  <LinkCard
+    title="Fork room-tba"
+    href="/guides/room-tba/"
+    body="Campus map + class finder: fork:init, campus data, generic class importer, deploy."
+  />
+  <LinkCard
+    title="Fork website"
+    href="/guides/website/"
+    body="Org landing site: rebrand tools.ts and site-meta, deploy to Cloudflare Pages or Vercel."
+  />
+  <LinkCard
+    title="Instances"
+    href="/instances/"
+    body="Live and in-progress campus deployments — uplb.tools, bulsu.tools, UP Visayas, OLFU, UP Diliman."
+  />
+  <LinkCard
+    title="One-click templates"
+    href="https://github.com/bulsutools/room-tba-template"
+    body="bulsutools/room-tba-template and website-template — Use this template, no campus config baked in."
+  />
+</CardGrid>
+
+## Live instances
+
+- [uplb.tools](https://uplb.tools) — UPLB Tools (flagship)
+- [bulsu.tools](https://bulsu.tools) — BulSU Tools
+- [room-tba.uplb.tools](https://room-tba.uplb.tools) — Room TBA @ UPLB
+- [room-tba.bulsu.tools](https://room-tba.bulsu.tools) — Room TBA @ BulSU
+- In development: [UP Diliman](https://github.com/uplbtools/room-tba-upd),
+  [UP Visayas](https://github.com/andrianllmm/upv-room-tba),
+  [OLFU Fatima](https://github.com/shawnL258/room-tba-fatimaUni)
+
+Full list: [Instances](/instances/).
+
+## The 30-second version
+
+1. [Stand up a campus org](/guides/new-campus-org/) — create the GitHub org,
+   profile repo, and bootstrap the repo set.
+2. [Fork room-tba](/guides/room-tba/) — clone or template, `bun run
+   fork:init`, seed your campus data, deploy.
+3. [Fork website](/guides/website/) — rebrand, list your tools, deploy.
+4. [Keep your fork in sync](/concepts/keep-in-sync/) — periodically merge
+   upstream improvements.
+
+The `org-template/` directory in this repo contains a bootstrap script and
+templates for step 1.

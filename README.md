@@ -1,8 +1,10 @@
-# fork-kit
+# Campus Tools (fork-kit)
 
-Fork kit for [UPLB Tools](https://github.com/uplbtools): an Astro Starlight
-docs site ("fork wiki") explaining how to create a campus fork of **room-tba**,
-**website**, and friends, plus an `org-template/` bootstrap for new campus orgs.
+Fork kit for campus tools in the [UPLB Tools](https://github.com/uplbtools)
+ecosystem: an Astro Starlight docs site ("fork wiki") explaining how to create
+a campus fork of **room-tba**, **website**, and friends, plus an
+`org-template/` bootstrap for new campus orgs. Live at
+<https://fork.bulsu.tools>.
 
 ## Layout
 
@@ -28,4 +30,4 @@ Deployed at <https://fork.bulsu.tools> (Cloudflare Pages, direct upload).
 [bulsutools/room-tba-template](https://github.com/bulsutools/room-tba-template)
 and [bulsutools/website-template](https://github.com/bulsutools/website-template)
 are GitHub template repos (clean mirrors of upstream `main`) — use **Use this
-template** to scaffold a campus repo without BulSU config baked in.
+template** to scaffold a campus repo without campus config baked in.

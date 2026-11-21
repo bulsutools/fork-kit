@@ -41,7 +41,7 @@ repo, edit the placeholders, and push. Fill in:
 and
 [bulsutools/website-template](https://github.com/bulsutools/website-template).
 Click **Use this template**, name the repo, done. They mirror upstream `main`
-with no BulSU config baked in. Downside: no `upstream` remote, so add one
+with no campus config baked in. Downside: no `upstream` remote, so add one
 afterwards if you want syncs (`git remote add upstream git@github.com:uplbtools/<repo>.git`).
 
 **Fork option:**
