@@ -27,7 +27,8 @@ Deployed at <https://fork.bulsu.tools> (Cloudflare Pages, direct upload).
 
 ## One-click templates
 
-[bulsutools/room-tba-template](https://github.com/bulsutools/room-tba-template)
-and [bulsutools/website-template](https://github.com/bulsutools/website-template)
+[room-tba-template](https://github.com/new?template_name=room-tba-template&template_owner=bulsutools)
+and
+[website-template](https://github.com/new?template_name=website-template&template_owner=bulsutools)
 are GitHub template repos (clean mirrors of upstream `main`) — use **Use this
 template** to scaffold a campus repo without campus config baked in.

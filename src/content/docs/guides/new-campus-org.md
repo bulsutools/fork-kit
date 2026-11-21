@@ -14,7 +14,7 @@ GitHub org creation is manual (can't be done via `gh`):
 2. Pick the free plan, name it consistently — all-lowercase is the convention
    (`bulsutools`, not `BulSUtools`)
 3. Username will be `<org>`; your domain can be anything (`bulsu.tools`,
-   `uplb.tools`)
+   `uplb.tools`) but domain.tools is preferred.
 
 ## 2. Org profile repo
 
@@ -37,9 +37,9 @@ repo, edit the placeholders, and push. Fill in:
 ## 3. Fork the repos
 
 **One-click option:** use the template repos instead of forking —
-[bulsutools/room-tba-template](https://github.com/bulsutools/room-tba-template)
+[room-tba-template](https://github.com/new?template_name=room-tba-template&template_owner=bulsutools)
 and
-[bulsutools/website-template](https://github.com/bulsutools/website-template).
+[website-template](https://github.com/new?template_name=website-template&template_owner=bulsutools).
 Click **Use this template**, name the repo, done. They mirror upstream `main`
 with no campus config baked in. Downside: no `upstream` remote, so add one
 afterwards if you want syncs (`git remote add upstream git@github.com:uplbtools/<repo>.git`).
@@ -50,12 +50,12 @@ afterwards if you want syncs (`git remote add upstream git@github.com:uplbtools/
 # room-tba is the flagship — fork it into the org
 gh repo fork uplbtools/room-tba --org <org> --clone=false
 
-# website — your org landing page
+# website — your org homepage
 gh repo fork uplbtools/website --org <org> --clone=false
 ```
 
 Then follow the per-repo guides: [room-tba](room-tba) and
-[website](website).
+[homepage](homepage).
 
 ## 4. Bootstrap checklist
 

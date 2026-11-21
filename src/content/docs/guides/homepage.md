@@ -1,5 +1,5 @@
 ---
-title: Fork website
+title: Fork homepage
 description: Fork the UPLB Tools org landing site and rebrand it for your campus.
 ---
 
@@ -28,7 +28,7 @@ contributor isn't reading UPLB instructions.
 ## Steps
 
 **One-click option:** create your repo from
-[bulsutools/website-template](https://github.com/bulsutools/website-template)
+[bulsutools/website-template](https://github.com/new?template_name=website-template&template_owner=bulsutools)
 (**Use this template**), then `git clone` it.
 
 **Fork option:**

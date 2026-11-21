@@ -10,7 +10,7 @@ an in-app editor, and a PWA that works offline.
 > **Read the in-app guide first.** The fork itself ships a wiki page at
 > `room-tba.<your-domain>/wiki/fork-for-your-campus` with exact file paths,
 > and a data guide at `docs/fork-data-guide.md` in the repo. This page is the
-> 10,000-ft version; those are the ground truth.
+> 10,000-ft version; those are the ground truth. Also see: `https://room-tba.uplb.tools/fork`
 
 ## What you keep vs. what you replace
 
@@ -43,7 +43,7 @@ schedule routing, events, alias matching, share links, the Drizzle schema.
 ## Steps
 
 **One-click option:** create your repo from
-[bulsutools/room-tba-template](https://github.com/bulsutools/room-tba-template)
+[room-tba-template](https://github.com/new?template_name=room-tba-template&template_owner=bulsutools)
 (**Use this template**), then `git clone` it and `git remote add upstream
 git@github.com:uplbtools/room-tba.git` if you want syncs.
 
@@ -87,10 +87,3 @@ You do **not** need a custom importer on day one:
 
 `bun run build` prerenders pages from the DB, so `DATABASE_URL` must be set at
 build time. Deploy to Vercel (import the repo, add env vars) or any Node host.
-
-## Known fork: BulSU
-
-[bulsutools/room-tba](https://github.com/bulsutools/room-tba) is a live fork
-for Bulacan State University Malolos — useful as a reference for what a real
-fork looks like (colleges-only seed, editor-driven data entry, transit
- disabled until routes are added).

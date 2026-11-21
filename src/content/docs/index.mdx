@@ -32,47 +32,44 @@ your campus.
     body="Campus map + class finder: fork:init, campus data, generic class importer, deploy."
   />
   <LinkCard
-    title="Fork website"
-    href="/guides/website/"
+    title="Fork homepage"
+    href="/guides/homepage/"
     body="Org landing site: rebrand tools.ts and site-meta, deploy to Cloudflare Pages or Vercel."
-  />
-  <LinkCard
-    title="One-click templates"
-    href="https://github.com/bulsutools/room-tba-template"
-    body="bulsutools/room-tba-template and website-template — Use this template, no campus config baked in."
   />
   <LinkCard
     title="Fork model"
     href="/concepts/fork-model/"
-    body="Fork vs template, what is campus-shaped vs UPLB-shaped, and why config files matter."
+    body="Fork vs template, what is campus-shaped vs upstream-shaped, and why config files matter."
   />
   <LinkCard
     title="Keep forks in sync"
     href="/concepts/keep-in-sync/"
     body="Merge upstream improvements without losing campus changes; schema migrations."
   />
+  <LinkCard
+    title="Fork checklist"
+    href="/reference/checklist/"
+    body="Copy-paste checklist for every repo you fork into a campus org."
+  />
 </CardGrid>
+
+## One-click templates
+
+Skip the fork entirely — generate a repo from a clean mirror of upstream
+`main` (no campus config baked in):
+
+- [room-tba-template](https://github.com/new?template_name=room-tba-template&template_owner=bulsutools) — **Use this template**
+- [website-template](https://github.com/new?template_name=website-template&template_owner=bulsutools) — **Use this template**
+
+Template repos have no `upstream` remote; add one if you want
+[syncs](/concepts/keep-in-sync/).
 
 ## Live instances
 
-<CardGrid>
-  <LinkCard title="uplb.tools" href="https://uplb.tools" body="UPLB Tools — the flagship org" />
-  <LinkCard title="room-tba.uplb.tools" href="https://room-tba.uplb.tools" body="Room TBA @ UPLB" />
-  <LinkCard title="bulsu.tools" href="https://bulsu.tools" body="BulSU Tools — Bulacan State University" />
-  <LinkCard title="room-tba.bulsu.tools" href="https://room-tba.bulsu.tools" body="Room TBA @ BulSU Malolos" />
-  <LinkCard title="geary.bulsu.tools" href="https://geary.bulsu.tools" body="Geary student handbook @ BulSU" />
-  <LinkCard title="fork.bulsu.tools" href="https://fork.bulsu.tools" body="This wiki" />
-</CardGrid>
+- [uplb.tools](https://uplb.tools) — UPLB Tools (flagship)
+- [room-tba.uplb.tools](https://room-tba.uplb.tools) — Room TBA @ UPLB
+- [bulsu.tools](https://bulsu.tools) — BulSU Tools
+- [room-tba.bulsu.tools](https://room-tba.bulsu.tools) — Room TBA @ BulSU
+- [geary.bulsu.tools](https://geary.bulsu.tools) — Geary @ BulSU
+- [fork.bulsu.tools](https://fork.bulsu.tools) — this wiki
 
-## The 30-second version
-
-1. [Stand up a campus org](/guides/new-campus-org/) — create the GitHub org,
-   profile repo, and bootstrap the repo set.
-2. [Fork room-tba](/guides/room-tba/) — clone or template, `bun run
-   fork:init`, seed your campus data, deploy.
-3. [Fork website](/guides/website/) — rebrand, list your tools, deploy.
-4. [Keep your fork in sync](/concepts/keep-in-sync/) — periodically merge
-   upstream improvements.
-
-The `org-template/` directory in this repo contains a bootstrap script and
-templates for step 1.

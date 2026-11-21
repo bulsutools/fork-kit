@@ -12,8 +12,8 @@ See the docs site (`src/content/docs/guides/new-campus-org.md`) for the full
 walkthrough. Live at <https://fork.bulsu.tools>.
 
 For a true one-click start, use the GitHub template repos instead of forking:
-[bulsutools/room-tba-template](https://github.com/bulsutools/room-tba-template)
+[room-tba-template](https://github.com/new?template_name=room-tba-template&template_owner=bulsutools)
 and
-[bulsutools/website-template](https://github.com/bulsutools/website-template)
+[website-template](https://github.com/new?template_name=website-template&template_owner=bulsutools)
 (both marked `is_template`, clean mirrors of upstream `main` — no campus
 config baked in).
