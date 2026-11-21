@@ -17,8 +17,6 @@ A live example: [bulsutools/website](https://github.com/bulsutools/website)
 | UPLB (Los Baños) | [uplb.tools](https://uplb.tools) | [uplbtools/website](https://github.com/uplbtools/website) |
 | BulSU (Malolos) | [bulsu.tools](https://bulsu.tools) | [bulsutools/website](https://github.com/bulsutools/website) |
 
-See the full [instances directory](/instances/) for every campus deployment.
-
 ## What to change
 
 | Thing | Where |

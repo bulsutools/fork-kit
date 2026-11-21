@@ -19,8 +19,6 @@ an in-app editor, and a PWA that works offline.
 | UPLB (Los Baños) | [room-tba.uplb.tools](https://room-tba.uplb.tools) | [uplbtools/room-tba](https://github.com/uplbtools/room-tba) |
 | BulSU (Malolos) | [room-tba.bulsu.tools](https://room-tba.bulsu.tools) | [bulsutools/room-tba](https://github.com/bulsutools/room-tba) |
 
-See the full [instances directory](/instances/) for every campus deployment.
-
 ## What you keep vs. what you replace
 
 **Keep (the engine):** map UI, search, side panel, pin flyouts, PGlite
