@@ -19,8 +19,8 @@ pnpm dev      # http://localhost:4321
 pnpm build    # static output in dist/
 ```
 
-Deployed at <https://fork.bulsu.tools> (Cloudflare Pages, git-connected —
-pushes to `main` auto-build and deploy; infra in `infra/` via OpenTofu).
+Deployed at <https://fork.bulsu.tools> (Cloudflare Pages — GitHub Actions
+builds and deploys on push to `main`).
 
 ## Forks using this
 
