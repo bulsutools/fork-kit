@@ -14,12 +14,13 @@ a campus fork of **room-tba**, **website**, and friends, plus an
 ## Develop
 
 ```sh
-npm install
-npm run dev      # http://localhost:4321
-npm run build    # static output in dist/
+pnpm install
+pnpm dev      # http://localhost:4321
+pnpm build    # static output in dist/
 ```
 
-Deployed at <https://fork.bulsu.tools> (Cloudflare Pages, direct upload).
+Deployed at <https://fork.bulsu.tools> (Cloudflare Pages, git-connected —
+pushes to `main` auto-build and deploy; infra in `infra/` via OpenTofu).
 
 ## Forks using this
 
