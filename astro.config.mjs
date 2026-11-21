@@ -14,7 +14,6 @@ export default defineConfig({
           label: "Start here",
           items: [{ autogenerate: { directory: "guides" } }],
         },
-        { label: "Instances", slug: "instances" },
         {
           label: "Concepts",
           items: [
