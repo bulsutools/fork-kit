@@ -7,3 +7,64 @@
 html[data-has-hero] .header {
   display: none;
 }
+
+/* Center the search control in the topbar; GitHub + theme stay far right */
+@media (min-width: 50rem) {
+  header.header > div.header {
+    position: relative;
+  }
+
+  header.header > div.header > div:nth-child(2) {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+/* Instances directory cards */
+.instance-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+  gap: 0.75rem;
+  margin: 1.5rem 0;
+}
+
+.instance-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 0.875rem 1rem;
+  border: 1px solid var(--sl-color-hairline-shade);
+  border-radius: 0.5rem;
+  background-color: var(--sl-color-bg-inlineCode);
+  text-decoration: none;
+}
+
+.instance-card:hover {
+  border-color: var(--sl-color-gray-5);
+  background-color: var(--sl-color-black);
+}
+
+.instance-card__campus {
+  font-size: var(--sl-text-xs);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--sl-color-gray-3);
+}
+
+.instance-card__tool {
+  font-size: var(--sl-text-lg);
+  font-weight: 600;
+  color: var(--sl-color-white);
+}
+
+.instance-card__domain {
+  font-size: var(--sl-text-sm);
+  color: var(--sl-color-blue);
+}
+
+.instance-card__meta {
+  font-size: var(--sl-text-xs);
+  color: var(--sl-color-gray-3);
+}

@@ -9,6 +9,7 @@ export default defineConfig({
       description:
         "Fork guides and org bootstrap for campus tools — room-tba, website, and friends.",
       social: [{ icon: "github", label: "GitHub", href: "https://github.com/bulsutools" }],
+      components: { PageFrame: "./src/components/PageFrame.astro" },
       customCss: ["./src/styles/custom.css"],
       sidebar: [
         { label: "Stand up a campus org", slug: "guides/new-campus-org" },

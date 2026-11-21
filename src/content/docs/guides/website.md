@@ -10,6 +10,15 @@ easiest part of standing up a campus org.
 A live example: [bulsutools/website](https://github.com/bulsutools/website)
 (`bulsu.tools`), deployed on Cloudflare Pages.
 
+## Live instances
+
+| University & campus | Domain | GitHub |
+| --- | --- | --- |
+| UPLB (Los Baños) | [uplb.tools](https://uplb.tools) | [uplbtools/website](https://github.com/uplbtools/website) |
+| BulSU (Malolos) | [bulsu.tools](https://bulsu.tools) | [bulsutools/website](https://github.com/bulsutools/website) |
+
+See the full [instances directory](/instances/) for every campus deployment.
+
 ## What to change
 
 | Thing | Where |
