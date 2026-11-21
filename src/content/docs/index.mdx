@@ -1,15 +1,26 @@
 ---
 title: Campus Tools
 description: Run campus utilities on your own campus — fork guides and org bootstrap for the UPLB Tools ecosystem.
+template: splash
 hero:
-  tagline: Get started building your local toolkit!
+  tagline: Fork guides and org bootstrap for campus tools — room-tba, website, and friends.
+  image:
+    alt: Campus Tools logo
+    html: >-
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="180" height="180" role="img" aria-label="Campus Tools">
+        <rect x="4" y="4" width="56" height="56" rx="16" fill="#8B1A2B"/>
+        <path d="M32 15 7 26l25 11 25-11z" fill="#F5C542"/>
+        <path d="M16 30.5v9.5c0 3.2 7.2 6.5 16 6.5s16-3.3 16-6.5v-9.5l-16 7z" fill="#F5C542" opacity=".85"/>
+        <line x1="56" y1="26" x2="56" y2="41" stroke="#F5C542" stroke-width="2.5" stroke-linecap="round"/>
+        <circle cx="56" cy="43.5" r="3" fill="#F5C542"/>
+      </svg>
   actions:
     - text: Start Building!
       link: /guides/new-campus-org/
       icon: right-arrow
-    - text: Find live instances
-      link: /#live-instances
-      icon: right-arrow
+    - text: Read the docs
+      link: /guides/room-tba/
+      icon: open-book
       variant: minimal
 ---
 
@@ -39,6 +50,16 @@ your campus.
     title="One-click templates"
     href="https://github.com/bulsutools/room-tba-template"
     body="bulsutools/room-tba-template and website-template — Use this template, no campus config baked in."
+  />
+  <LinkCard
+    title="Fork model"
+    href="/concepts/fork-model/"
+    body="Fork vs template, what is campus-shaped vs UPLB-shaped, and why config files matter."
+  />
+  <LinkCard
+    title="Keep forks in sync"
+    href="/concepts/keep-in-sync/"
+    body="Merge upstream improvements without losing campus changes; schema migrations."
   />
 </CardGrid>
 
