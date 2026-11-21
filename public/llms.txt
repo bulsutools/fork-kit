@@ -1,0 +1,19 @@
+# Campus Tools
+
+> Fork guides and org bootstrap for campus tools — room-tba, website, and friends.
+
+Campus Tools documents how to stand up your own campus org under the BulSU Tools
+ecosystem: forking the Room TBA classroom-finder and the org homepage, wiring up
+a new campus domain, and keeping forks in sync with upstream.
+
+## Guides
+
+- [Stand up a campus org](https://fork.bulsu.tools/guides/new-campus-org/): end-to-end bootstrap — create the org, org profile repo, fork the repos, checklist
+- [Fork Room TBA](https://fork.bulsu.tools/guides/room-tba/): fork the classroom finder for your campus, including database and bulk-import steps
+- [Fork Homepage](https://fork.bulsu.tools/guides/website/): fork the org homepage site
+- [Keeping forks in sync](https://fork.bulsu.tools/keep-in-sync/): which files are campus config vs upstream, and how to merge upstream changes
+
+## Reference
+
+- [Instances](https://fork.bulsu.tools/instances/): directory of live campus instances and their repos
+- [Home](https://fork.bulsu.tools/): overview and getting-started links
