@@ -19,5 +19,9 @@ html[data-has-hero] .header {
     left: 50%;
     transform: translateX(-50%);
   }
+
+  header.header .right-group {
+    margin-left: auto;
+  }
 }
 

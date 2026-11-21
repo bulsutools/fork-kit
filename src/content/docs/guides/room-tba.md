@@ -1,5 +1,5 @@
 ---
-title: Fork room-tba
+title: Fork Room TBA
 description: Stand up Room TBA for your campus — map, rooms, class schedules.
 ---
 

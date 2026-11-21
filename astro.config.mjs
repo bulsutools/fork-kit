@@ -17,7 +17,7 @@ export default defineConfig({
         {
           label: "Projects",
           items: [
-            { label: "Fork room-tba", slug: "guides/room-tba" },
+            { label: "Fork Room TBA", slug: "guides/room-tba" },
             { label: "Fork Homepage", slug: "guides/website" },
           ],
         },
