@@ -10,16 +10,18 @@ export default defineConfig({
         "Fork guides and org bootstrap for campus tools — room-tba, website, and friends.",
       social: [{ icon: "github", label: "GitHub", href: "https://github.com/bulsutools" }],
       sidebar: [
+        { label: "Stand up a campus org", slug: "guides/new-campus-org" },
+        { label: "Instances", slug: "instances" },
         {
-          label: "Concepts",
+          label: "Projects",
           items: [
-            { label: "The fork model", slug: "concepts/fork-model" },
-            { label: "Keeping forks in sync", slug: "concepts/keep-in-sync" },
+            { label: "Fork room-tba", slug: "guides/room-tba" },
+            { label: "Fork Homepage", slug: "guides/website" },
           ],
         },
         {
           label: "Reference",
-          items: [{ label: "Fork checklist", slug: "reference/checklist" }],
+          items: [{ label: "Keeping forks in sync", slug: "keep-in-sync" }],
         },
       ],
     }),
