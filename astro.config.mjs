@@ -11,10 +11,6 @@ export default defineConfig({
       social: [{ icon: "github", label: "GitHub", href: "https://github.com/bulsutools" }],
       sidebar: [
         {
-          label: "Start here",
-          items: [{ autogenerate: { directory: "guides" } }],
-        },
-        {
           label: "Concepts",
           items: [
             { label: "The fork model", slug: "concepts/fork-model" },

@@ -36,26 +36,15 @@ repo, edit the placeholders, and push. Fill in:
 
 ## 3. Fork the repos
 
-**One-click option:** use the template repos instead of forking —
-[room-tba-template](https://github.com/new?template_name=room-tba-template&template_owner=bulsutools)
-and
-[website-template](https://github.com/new?template_name=website-template&template_owner=bulsutools).
-Click **Use this template**, name the repo, done. They mirror upstream `main`
-with no campus config baked in. Downside: no `upstream` remote, so add one
-afterwards if you want syncs (`git remote add upstream git@github.com:uplbtools/<repo>.git`).
-
 **Fork option:**
 
 ```sh
-# room-tba is the flagship — fork it into the org
-gh repo fork uplbtools/room-tba --org <org> --clone=false
-
-# website — your org homepage
+# website — your org landing page
 gh repo fork uplbtools/website --org <org> --clone=false
 ```
 
 Then follow the per-repo guides: [room-tba](room-tba) and
-[homepage](homepage).
+[website](website).
 
 ## 4. Bootstrap checklist
 

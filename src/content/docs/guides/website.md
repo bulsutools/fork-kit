@@ -1,5 +1,5 @@
 ---
-title: Fork homepage
+title: Fork Homepage
 description: Fork the UPLB Tools org landing site and rebrand it for your campus.
 ---
 
