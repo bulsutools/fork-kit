@@ -1,0 +1,9 @@
+/* Hide the site title in the topbar on every page */
+.title-wrapper {
+  display: none;
+}
+
+/* Hide the entire topbar on the splash homepage (hero pages) */
+html[data-has-hero] .header {
+  display: none;
+}
