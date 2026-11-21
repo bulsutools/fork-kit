@@ -1,6 +1,11 @@
-/* Hide the site title in the topbar on every page */
+/* Show the site logo + title in the topbar */
 .title-wrapper {
-  display: none;
+  display: flex;
+}
+
+/* Smaller logo mark in the header */
+.site-title img {
+  height: 1.5rem;
 }
 
 /* Hide the entire topbar on the splash homepage (hero pages) */
@@ -8,20 +13,78 @@ html[data-has-hero] .header {
   display: none;
 }
 
+/* Center the splash hero content (Starlight left-aligns it at >=50rem) */
+html[data-has-hero] .hero .stack {
+  text-align: center;
+}
+
+html[data-has-hero] .hero .copy {
+  align-items: center;
+}
+
+html[data-has-hero] .hero .actions {
+  justify-content: center;
+}
+
+/* Keep the hero logo inside its column on small screens */
+.hero-html img {
+  max-width: 100%;
+  height: auto;
+}
+
 /* Center the search control in the topbar; GitHub + theme stay far right */
 @media (min-width: 50rem) {
   header.header > div.header {
     position: relative;
+    /* Starlight switches to a 3-col grid when a sidebar exists; we hide the
+       title and center search absolutely, so flex keeps right-group pinned right */
+    display: flex;
   }
 
   header.header > div.header > div:nth-child(2) {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    width: 22rem;
   }
 
   header.header .right-group {
     margin-left: auto;
   }
+
+  /* Enlarge the search button */
+  header.header site-search button[data-open-modal] {
+    height: 3rem;
+    padding-inline: 1rem;
+    font-size: var(--sl-text-base);
+  }
 }
+
+/* Show the sidebar bottom bar (social icons + theme select) on desktop too,
+   pinned to the bottom of the sidebar */
+.sidebar-content > .md\:sl-hidden {
+  display: block;
+  margin-top: auto;
+}
+
+/* Hide the site footer on docs pages — it only shows on the splash home */
+html:not([data-has-hero]) .site-footer {
+  display: none;
+}
+
+/* Hide the mobile "On this page" dropdown and its reserved top gap */
+mobile-starlight-toc {
+  display: none;
+}
+
+html[data-has-toc] {
+  --sl-mobile-toc-height: 0rem;
+}
+
+/* Trim the right padding inside the sidebar */
+.sidebar-content {
+  padding-inline-end: 0;
+}
+
+
 

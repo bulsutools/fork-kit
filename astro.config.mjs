@@ -6,6 +6,7 @@ export default defineConfig({
   integrations: [
     starlight({
       title: "Campus Tools",
+      logo: { src: "./src/assets/logo.svg", alt: "Campus Tools logo" },
       description:
         "Fork guides and org bootstrap for campus tools — room-tba, website, and friends.",
       social: [{ icon: "github", label: "GitHub", href: "https://github.com/bulsutools" }],
