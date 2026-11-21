@@ -58,7 +58,7 @@ cat <<EOF
 
 Done. Next steps:
   1. Clone each fork and follow the guides:
-       https://github.com/$ORG/fork-kit  (or the docs site once deployed)
+       https://github.com/$ORG/fork-kit  (or https://fork.bulsu.tools)
   2. room-tba: cp .env.example .env.local, bun install, bun run fork:init
   3. website: edit src/data/tools.ts + src/lib/site-meta.ts, npm run dev
   4. Work through org-template/REPO-CHECKLIST.md for every repo

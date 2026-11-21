@@ -3,13 +3,13 @@ import starlight from "@astrojs/starlight";
 
 export default defineConfig({
   // TODO: set this to wherever the site is deployed
-  site: "https://fork-kit.uplb.tools",
+  site: "https://fork.bulsu.tools",
   integrations: [
     starlight({
       title: "UPLB Tools Fork Kit",
       description:
         "How to fork UPLB Tools projects — room-tba, website, and friends — into your own campus org.",
-      social: [{ icon: "github", label: "GitHub", href: "https://github.com/uplbtools" }],
+      social: [{ icon: "github", label: "GitHub", href: "https://github.com/bulsutools" }],
       sidebar: [
         {
           label: "Start here",

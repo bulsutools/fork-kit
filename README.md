@@ -17,8 +17,15 @@ npm run dev      # http://localhost:4321
 npm run build    # static output in dist/
 ```
 
-Set `site` in `astro.config.mjs` to the deployed URL before shipping.
+Deployed at <https://fork.bulsu.tools> (Cloudflare Pages, direct upload).
 
 ## Forks using this
 
 - [bulsutools](https://github.com/bulsutools) — Bulacan State University
+
+## One-click templates
+
+[bulsutools/room-tba-template](https://github.com/bulsutools/room-tba-template)
+and [bulsutools/website-template](https://github.com/bulsutools/website-template)
+are GitHub template repos (clean mirrors of upstream `main`) — use **Use this
+template** to scaffold a campus repo without BulSU config baked in.

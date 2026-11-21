@@ -42,6 +42,13 @@ schedule routing, events, alias matching, share links, the Drizzle schema.
 
 ## Steps
 
+**One-click option:** create your repo from
+[bulsutools/room-tba-template](https://github.com/bulsutools/room-tba-template)
+(**Use this template**), then `git clone` it and `git remote add upstream
+git@github.com:uplbtools/room-tba.git` if you want syncs.
+
+**Fork option:**
+
 ```sh
 gh repo fork uplbtools/room-tba --org <your-org>
 git clone git@github.com:<your-org>/room-tba.git

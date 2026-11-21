@@ -27,6 +27,12 @@ contributor isn't reading UPLB instructions.
 
 ## Steps
 
+**One-click option:** create your repo from
+[bulsutools/website-template](https://github.com/bulsutools/website-template)
+(**Use this template**), then `git clone` it.
+
+**Fork option:**
+
 ```sh
 gh repo fork uplbtools/website --org <your-org>
 git clone git@github.com:<your-org>/website.git

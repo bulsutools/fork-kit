@@ -36,6 +36,16 @@ repo, edit the placeholders, and push. Fill in:
 
 ## 3. Fork the repos
 
+**One-click option:** use the template repos instead of forking —
+[bulsutools/room-tba-template](https://github.com/bulsutools/room-tba-template)
+and
+[bulsutools/website-template](https://github.com/bulsutools/website-template).
+Click **Use this template**, name the repo, done. They mirror upstream `main`
+with no BulSU config baked in. Downside: no `upstream` remote, so add one
+afterwards if you want syncs (`git remote add upstream git@github.com:uplbtools/<repo>.git`).
+
+**Fork option:**
+
 ```sh
 # room-tba is the flagship — fork it into the org
 gh repo fork uplbtools/room-tba --org <org> --clone=false

@@ -9,4 +9,10 @@ Bootstrap assets for standing up a new campus org from UPLB Tools forks.
 - `REPO-CHECKLIST.md` — per-repo checklist to run after every fork.
 
 See the docs site (`src/content/docs/guides/new-campus-org.md`) for the full
-walkthrough.
+walkthrough. Live at <https://fork.bulsu.tools>.
+
+For a true one-click start, use the GitHub template repos instead of forking:
+[bulsutools/room-tba-template](https://github.com/bulsutools/room-tba-template)
+and
+[bulsutools/website-template](https://github.com/bulsutools/website-template)
+(both marked `is_template`, clean mirrors of upstream `main`).

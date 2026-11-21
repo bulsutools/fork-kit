@@ -20,6 +20,18 @@ UPLB Tools stack on your campus.
 
 Gradesim is **not** covered here — it has its own fork track.
 
+## One-click start
+
+Prefer a button over a fork? Two GitHub **template repos** mirror upstream
+`main` with no BulSU config baked in:
+
+- [bulsutools/room-tba-template](https://github.com/bulsutools/room-tba-template) — **Use this template**
+- [bulsutools/website-template](https://github.com/bulsutools/website-template) — **Use this template**
+
+Trade-off: template-generated repos have no `upstream` remote, so
+[syncing](concepts/keep-in-sync) means adding one manually. Real forks keep
+the link for you.
+
 ## The 30-second version
 
 1. [Stand up a campus org](guides/new-campus-org) — create the GitHub org,
