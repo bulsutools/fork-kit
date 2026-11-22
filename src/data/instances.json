@@ -1,0 +1,29 @@
+[
+  {
+    "campus": "UPLB (Los Baños)",
+    "tool": "Org site",
+    "domain": "uplb.tools",
+    "repo": "uplbtools/website",
+    "maintainer": "Simonee Mariquit",
+    "maintainerUrl": "https://github.com/smmariquit",
+    "status": "live"
+  },
+  {
+    "campus": "BulSU (Malolos)",
+    "tool": "Org site",
+    "domain": "bulsu.tools",
+    "repo": "bulsutools/website",
+    "maintainer": "John Carlo Santos",
+    "maintainerUrl": "https://github.com/kuyacarlo",
+    "status": "live"
+  },
+  {
+    "campus": "BulSU (Malolos)",
+    "tool": "Room TBA",
+    "domain": "room-tba.bulsu.tools",
+    "repo": "bulsutools/room-tba",
+    "maintainer": "John Carlo Santos",
+    "maintainerUrl": "https://github.com/kuyacarlo",
+    "status": "live"
+  }
+]

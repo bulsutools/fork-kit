@@ -1,0 +1,30 @@
+---
+title: Instances
+description: Live campus deployments of Campus Tools.
+---
+
+import InstancesExplorer from "../../components/InstancesExplorer.astro";
+
+Every campus running a fork of a Campus Tools project is tracked in one
+registry: [`src/data/instances.json`](https://github.com/bulsutools/fork-kit/blob/main/src/data/instances.json)
+in this repo. To add a campus, add one entry there — the table below and the
+[JSON endpoint](/api/instances.json) both render from it.
+
+<InstancesExplorer />
+
+
+## Registry format
+
+Each entry in `src/data/instances.json` is one line-item object:
+
+| Field | Meaning |
+| --- | --- |
+| `campus` | Display name, e.g. `BulSU (Malolos)` |
+| `tool` | Which tool is deployed, e.g. `Org site`, `Room TBA` |
+| `domain` | Public domain |
+| `repo` | `org/repo` of the campus fork |
+| `maintainer` / `maintainerUrl` | Lead maintainer or founder |
+| `status` | `live`, or another value as the deployment state changes |
+
+For machine-readable access, fetch `/api/instances.json` — it returns the same
+registry as JSON.

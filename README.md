@@ -9,6 +9,7 @@ a campus fork of **room-tba**, **website**, and friends, plus an
 ## Layout
 
 - `src/content/docs/` — the fork wiki (edit these `.md` files)
+- `src/data/instances.json` — campus instances registry (powers `/instances` and `/api/instances.json`)
 - `org-template/` — org profile template, bootstrap script, checklists
 
 ## Develop

@@ -16,4 +16,5 @@ a new campus domain, and keeping forks in sync with upstream.
 ## Reference
 
 - [Instances](https://fork.bulsu.tools/instances/): directory of live campus instances and their repos
+- [Instances JSON](https://fork.bulsu.tools/api/instances.json): same registry as machine-readable JSON
 - [Home](https://fork.bulsu.tools/): overview and getting-started links
