@@ -22,6 +22,33 @@ pnpm build    # static output in dist/
 Deployed at <https://fork.bulsu.tools> (Cloudflare Pages — GitHub Actions
 builds and deploys on push to `main`).
 
+## MCP server
+
+The wiki is also served over MCP (Streamable HTTP, JSON responses) at
+`https://fork.bulsu.tools/mcp` so agents can retrieve guides programmatically.
+It is a Cloudflare Pages Function in `functions/mcp.ts` with zero runtime
+dependencies; it reads `/mcp/resources.json`, which an Astro endpoint
+(`src/pages/mcp/resources.json.ts`) generates from the `docs` content
+collection at build time — new pages in `src/content/docs/` appear automatically.
+
+Tools:
+
+- `list_guides` — all wiki pages (slug, title, path, summary)
+- `get_guide(slug)` — full markdown of a page, identical to the published source
+- `search_docs(query)` — keyword search over the corpus
+
+MCP client config:
+
+```json
+{
+  "mcpServers": {
+    "fork-kit": {
+      "url": "https://fork.bulsu.tools/mcp"
+    }
+  }
+}
+```
+
 ## Forks using this
 
 - [bulsutools](https://github.com/bulsutools) — Bulacan State University
