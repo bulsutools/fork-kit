@@ -1,0 +1,185 @@
+---
+import instances from "../data/instances.json";
+
+const tools = [...new Set(instances.map((i) => i.tool))].sort();
+const campuses = [...new Set(instances.map((i) => i.campus))].sort();
+
+function statusLabel(status: string) {
+  return status === "live" ? "Live" : status;
+}
+---
+
+<div class="instances-explorer">
+	<div class="instances-filters">
+		<label>
+			Tool
+			<select id="instances-filter-tool">
+				<option value="">All tools</option>
+				{tools.map((tool) => <option value={tool}>{tool}</option>)}
+			</select>
+		</label>
+		<label>
+			Campus
+			<select id="instances-filter-campus">
+				<option value="">All campuses</option>
+				{campuses.map((campus) => <option value={campus}>{campus}</option>)}
+			</select>
+		</label>
+		<span id="instances-count" class="instances-count">
+			{instances.length} {instances.length === 1 ? "instance" : "instances"}
+		</span>
+	</div>
+
+	<div class="table-wrapper">
+		<table>
+			<thead>
+				<tr>
+					<th>University &amp; campus</th>
+					<th>Tool</th>
+					<th>Domain</th>
+					<th>GitHub</th>
+					<th>Lead maintainer / founder</th>
+					<th>Status</th>
+				</tr>
+			</thead>
+			<tbody>
+				{
+					instances.map((instance) => (
+						<tr
+							data-tool={instance.tool}
+							data-campus={instance.campus}
+							data-status={instance.status}
+						>
+							<td>{instance.campus}</td>
+							<td>{instance.tool}</td>
+							<td>
+								<a href={`https://${instance.domain}`}>{instance.domain}</a>
+							</td>
+							<td>
+								<a href={`https://github.com/${instance.repo}`}>{instance.repo}</a>
+							</td>
+							<td>
+								<a href={instance.maintainerUrl}>{instance.maintainer}</a>
+							</td>
+							<td>
+								<span class={`status-badge status-${instance.status}`}>
+									{statusLabel(instance.status)}
+								</span>
+							</td>
+						</tr>
+					))
+				}
+			</tbody>
+		</table>
+	</div>
+	<p id="instances-empty" hidden>No instances match the selected filters.</p>
+</div>
+
+<script>
+	const toolSelect = document.getElementById(
+		"instances-filter-tool",
+	) as HTMLSelectElement | null;
+	const campusSelect = document.getElementById(
+		"instances-filter-campus",
+	) as HTMLSelectElement | null;
+	const countEl = document.getElementById("instances-count");
+	const emptyEl = document.getElementById("instances-empty");
+	const explorer = document.querySelector(".instances-explorer");
+	const rows = explorer
+		? Array.from(explorer.querySelectorAll<HTMLTableRowElement>("tbody tr"))
+		: [];
+
+	function applyFilters() {
+		const tool = toolSelect?.value ?? "";
+		const campus = campusSelect?.value ?? "";
+		let visible = 0;
+		for (const row of rows) {
+			const match =
+				(!tool || row.dataset.tool === tool) &&
+				(!campus || row.dataset.campus === campus);
+			row.hidden = !match;
+			if (match) visible += 1;
+		}
+		if (countEl) {
+			countEl.textContent = `${visible} ${visible === 1 ? "instance" : "instances"}`;
+		}
+		if (emptyEl) emptyEl.hidden = visible !== 0;
+	}
+
+	toolSelect?.addEventListener("change", applyFilters);
+	campusSelect?.addEventListener("change", applyFilters);
+</script>
+
+<style>
+	.instances-filters {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: end;
+		gap: 0.75rem 1rem;
+		margin-block-end: 1rem;
+	}
+
+	.instances-filters label {
+		display: flex;
+		flex-direction: column;
+		gap: 0.25rem;
+		font-size: var(--sl-text-sm);
+		color: var(--sl-color-gray-3);
+	}
+
+	.instances-filters select {
+		font: inherit;
+		color: var(--sl-color-white);
+		background-color: var(--sl-color-black);
+		border: 1px solid var(--sl-color-hairline-shade);
+		border-radius: 0.375rem;
+		padding: 0.375rem 0.5rem;
+		min-width: 12rem;
+	}
+
+	.instances-count {
+		margin-inline-start: auto;
+		font-size: var(--sl-text-sm);
+		color: var(--sl-color-gray-3);
+	}
+
+	.table-wrapper {
+		overflow-x: auto;
+	}
+
+	table {
+		width: 100%;
+		border-collapse: collapse;
+		font-size: var(--sl-text-sm);
+	}
+
+	th,
+	td {
+		text-align: start;
+		padding: 0.5rem 0.75rem;
+		border-bottom: 1px solid var(--sl-color-hairline-shade);
+		vertical-align: top;
+	}
+
+	th {
+		color: var(--sl-color-gray-3);
+		font-weight: 600;
+	}
+
+	.status-badge {
+		display: inline-block;
+		padding: 0.125rem 0.5rem;
+		border-radius: 999px;
+		font-size: var(--sl-text-xs);
+		border: 1px solid var(--sl-color-hairline-shade);
+	}
+
+	.status-live {
+		color: var(--sl-color-green-low);
+		border-color: var(--sl-color-green);
+	}
+
+	#instances-empty {
+		color: var(--sl-color-gray-3);
+	}
+</style>
