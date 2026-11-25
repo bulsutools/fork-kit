@@ -46,7 +46,31 @@ gh repo fork uplbtools/website --org <org> --clone=false
 Then follow the per-repo guides: [room-tba](room-tba) and
 [website](website).
 
-## 4. Bootstrap checklist
+## 4. Agent path: `pnpm bootstrap`
+
+Prefer letting an agent run the checklist? `scripts/bootstrap-campus.ts` in this
+repo turns `{campus_name, campus_slug, tools[]}` into a ready-to-review scaffold.
+The matching agent skill lives at `.agents/skills/campus-bootstrap/SKILL.md`.
+
+```sh
+pnpm install
+pnpm bootstrap --campus acme --tools room-tba,website --dry-run
+```
+
+- `--campus` is the org slug (required); `--name`, `--university`, `--domain`
+  fill the placeholders; `--tools` defaults to `room-tba,website`.
+- `--dry-run` prints the full plan with zero side effects. Review it first.
+- Without `--dry-run` it writes `scaffold/<slug>/`: `PLAN.md`, a rendered
+  `org-profile/profile/README.md`, per-tool `checklists/<tool>.md` with exact
+  commands, and `STEPS.log`. Re-running overwrites the same files (idempotent).
+- `--execute` additionally runs the `gh` repo commands (org profile repo +
+  forks), skipping repos that already exist. It never creates the GitHub org —
+  step 1 above stays manual, and no repos are created without `--execute`.
+
+Every generated file links back to this guide, the per-tool guides, and
+`org-template/REPO-CHECKLIST.md`.
+
+## 5. Bootstrap checklist
 
 `org-template/REPO-CHECKLIST.md` in this repo is the full per-repo checklist.
 The short version for each fork:
@@ -58,7 +82,7 @@ The short version for each fork:
 - [ ] Enable issues/wiki as needed; add topic tags
 - [ ] Add your org to upstream repos' community links where relevant
 
-## 5. Optional extras
+## 6. Optional extras
 
 - **Discord bot / community**: uplbtools has `discord-bot` and a Messenger
   integration. These are UPLB-specific but the pattern ports.
